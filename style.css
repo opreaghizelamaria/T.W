@@ -1,0 +1,182 @@
+body{
+	background-color: #0c0d0f;
+}
+
+h2{
+	color: white;
+	font-style: italic;
+
+}
+
+
+.title {
+			 
+			
+			font-size: 60px;
+			font-style: oblique; 
+			color: black; 
+  			width: 100%;
+  			height: 200px;
+  			display: flex;
+  			justify-content: center;
+  			align-items: center;
+		}
+		.intro{
+			
+			border-style: outset;
+			padding-left: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 25px;
+			font-style: oblique; 
+			color: white; 
+  			width: 98%;
+  			height: 200px;
+  			display: flex;
+  			justify-content: center;
+  			align-items: center;
+		}
+        header {
+            background: url("https://t3.ftcdn.net/jpg/00/60/23/82/240_F_60238227_sJHUoeelKllrrdPQPz8AtWnDIPp3x3bf.jpg") no-repeat center;
+            background-size: 100% 100%;
+            height: 250px;
+            
+        }
+        body{
+        	margin: 10px;
+        	padding: 10px;
+        }
+        iframe{
+        	display: block;
+        	margin-right: auto;
+        	margin-left: auto;
+        	margin-top: 15px;
+
+        }
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}li a:hover {
+    background-color: #111;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;}
+input[type=submit]{
+	color: black;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, td, th {
+	border-collapse: collapse;
+	background-color: rgba(192,192,192,0.1);
+    border: 1px solid black;
+    border-color: white;
+}
+td{
+	color: white;
+	font-size: 15px;
+}
+th{
+	color:white;
+	font-size: 23px;
+}
+input{
+	color: white;
+}
+label{
+	color: black;
+}
+h3{
+	color: black;
+}
+p{
+	color: white;
+}
+
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #333;
+
+
+	background-color: rgba(192,192,192,0.2);
+	opacity:0;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 300px;
+	height: 280px;
+	position: center;
+	
+	background-color: rgba(192,192,192,0.95);
+
+	margin:5% auto;
+	
+	padding: 25px 25px 25px 25px;
+	border-radius: 10px;
+	
+	}
+
+.flex-grid {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content:space-around;
+	flex-align:center;
+	flex-wrap:wrap;
+	flex-direction:row;
+
+}
+
+.col {
+width: 300px;
+height: auto;
+padding: 10px;
+margin: 15px;
+
+}
+footer{
+	color: white; 
+	font-size:25px;
+}
+h2{
+	color: white;
+}
+blockquote{
+	color: white;
+}
+h5{
+	color: white;
+}
+caption{
+	color: white;
+}
