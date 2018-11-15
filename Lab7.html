@@ -1,0 +1,65 @@
+<!--<html>
+    <body>
+        <script src="Laboratorul7.js">
+           
+            </script>
+           
+            
+          
+
+        
+    </body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+<style>
+
+#myAnimation {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+</style>
+
+<script>
+        pos=0;
+    function Move() {
+      var elem = document.getElementById("myAnimation");   
+        pos++;
+        if(pos>=14)
+        {
+            pos=0; elem.style.left=0;
+        }else
+        elem.style.left = pos+ '20px'; 
+    
+    }
+    function Reset() {
+      var elem = document.getElementById("myAnimation");   
+        pos=0;
+        elem.style.left = "8px"; 
+    
+    }
+   
+    </script>
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+
+<button onclick="Move()">Move</button> 
+<button onclick="Reset()">Reset</button> 
+
+<br>
+
+
+<canvas id ="myAnimation"></canvas>
+
+
+</body>
+</html>
