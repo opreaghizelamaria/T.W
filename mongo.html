@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type='text/javascript' src='http://code.jquery.com/jquery-1.9.1.js'></script>
+  <script type='text/javascript'>
+$(function(){
+  $.ajax({
+    url: 'http://localhost:3000/MyDataBase',
+    type: 'get',
+    //dataType: JSON,
+    success: function (data) {
+      console.log( data);
+      var newData=JSON.stringify(data);
+      //newData=newData.slice(1,newData.length-1);
+      console.log(newData);
+      //newData=JSON.parse(newData);
+      newData=$.parseJSON(newData);
+      $(data).each(
+      function() {
+      $('#tbody').append(
+            '<tr><td>' + this.Id
+           + '</td><td>'
+           + this.Name
+           + '</td><td>'
+           + this.Age
+           + '</td><td>'
+           + this.Status
+           + '</td></tr>')
+                          });
+},
+    error: function (XMLHttpRequest, textStatus, errorThrown) {
+      console.log('error', errorThrown);
+    }
+  });
+});
+
+
+</script>
+<style>
+table {
+border-collapse: collapse;
+}
+
+table, th, td {
+border: 1px solid black;
+}
+th,td {
+  height: 50px;
+  width: 150px;
+}
+
+</style>
+<body id="tbody">
+
+  <table >
+      <thead>
+          <tr>
+              <th>Id</th>
+              <th>Name</th>      
+              <th>Age</th>                  
+              <th>Status</th>                  
+          
+          </tr>                   
+      </thead>
+  </table>
+</div>
+</body>
+</html>
